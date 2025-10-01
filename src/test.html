@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8" />
+    <title>Content Encoding HTTP Zlib Test</title>
+  </head>
+
+  <body>
+    <h1>Content Encoding HTTP Zlib Test</h1>
+    <p>This is a test page for the content-encoding-http-zlib project.</p>
+    <p>
+      Open the browser console to see the output of the fetch request.
+    </p>
+    <script>
+      async function fetchData() {
+        try {
+          const response = await fetch('http://localhost:3000/bigData');
+          const data = await response.json();
+          console.log('Fetched Data:', data);
+        } catch (error) {
+          console.error('Error fetching data:', error);
+        }
+      }
+
+      fetchData();
+    </script>
+  </body>
+
+</html>
+<!-- End of file: content-encoding-http-zlib/src/test.html -->

@@ -1,0 +1,33 @@
+{
+  "name": "content-encoding-http-zlib",
+  "version": "1.0.0",
+  "description": "Benchmarking content encoding between http & zlib",
+  "homepage": "https://github.com/jknanda78/content-encoding-http-zlib#readme",
+  "bugs": {
+    "url": "https://github.com/jknanda78/content-encoding-http-zlib/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jknanda78/content-encoding-http-zlib.git"
+  },
+  "license": "MIT",
+  "author": "JK",
+  "type": "commonjs",
+  "main": "src/server.ts",
+  "scripts": {
+    "start": "ts-node src/server.ts",
+    "dev": "nodemon --watch 'src/**/*.ts' --exec 'ts-node' src/server.ts",
+    "test": "npm test"
+  },
+  "dependencies": {
+    "compression": "^1.8.1",
+    "express": "^5.1.0"
+  },
+  "devDependencies": {
+    "@types/compression": "^1.8.1",
+    "@types/express": "^5.0.3",
+    "nodemon": "^3.1.10",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.3"
+  }
+}
