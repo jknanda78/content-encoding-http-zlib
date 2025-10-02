@@ -20,6 +20,7 @@ app.use(
 app.get("/bigData", (req, res) => {
   try {
     const compressedData = zlib.gzipSync(JSON.stringify(jsonData));
+    res.set("Content-Type", "application/json");
     res.set("Content-Encoding", "gzip");
     res.send(compressedData);
   } catch (err) {
