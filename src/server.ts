@@ -5,7 +5,7 @@ import zlib from "node:zlib";
 
 const app = express();
 const PORT = 3000;
-const jsonData = require("./data.json");
+const jsonData = require("./flat-data.json");
 
 // Enable compression for all responses
 /*
